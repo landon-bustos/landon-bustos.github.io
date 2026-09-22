@@ -26,6 +26,17 @@ body {
   border-bottom: 1px solid #e5e5e5;
 }
 
+.site-header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.page-content {
+  padding-top: 1.8em;
+}
+
 .site-title {
   font-size: 24px;
 }
@@ -39,7 +50,15 @@ a:visited {
 }
 
 .post-list > li {
-  margin-bottom: 2.5em;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.post-list > li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .post-meta {
