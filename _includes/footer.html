@@ -1,0 +1,18 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+    <p>
+      &copy; {{ 'now' | date: "%Y" }} Landon. All writing on this site is
+      original work by Landon unless otherwise noted.
+    </p>
+    <p>
+      {%- if site.minima.social_links.github -%}
+        <a href="https://github.com/{{ site.minima.social_links.github }}">GitHub</a>
+      {%- endif -%}
+      {%- if site.minima.social_links.linkedin %} &middot;
+        <a href="https://linkedin.com/in/{{ site.minima.social_links.linkedin }}">LinkedIn</a>
+      {%- endif -%}
+    </p>
+  </div>
+</footer>

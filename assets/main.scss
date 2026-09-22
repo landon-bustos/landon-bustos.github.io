@@ -1,0 +1,57 @@
+---
+---
+
+@import "minima";
+
+// A slightly more editorial, less "default Jekyll theme" look.
+
+:root {
+  --econ-serif: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  font-family: var(--econ-serif);
+  color: #1a1a1a;
+}
+
+.site-title,
+.post-title,
+.page-heading {
+  font-family: var(--econ-serif);
+  font-weight: 700;
+}
+
+.site-header {
+  border-top: 4px solid #14213d;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.site-title {
+  font-size: 24px;
+}
+
+a {
+  color: #14213d;
+}
+
+a:visited {
+  color: #3a3a6a;
+}
+
+.post-list > li {
+  margin-bottom: 2.5em;
+}
+
+.post-meta {
+  color: #6b6b6b;
+  font-style: italic;
+}
+
+blockquote {
+  border-left: 4px solid #14213d;
+  color: #444;
+}
+
+code, pre {
+  font-family: "SFMono-Regular", Consolas, monospace;
+}

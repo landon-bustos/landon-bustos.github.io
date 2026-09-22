@@ -1,0 +1,36 @@
+title: Marginal Notes
+description: >-
+  Commentary and analysis on labor markets, financial markets, and the
+  economy, written by Landon.
+author: Landon
+email: emaillandonb@gmail.com
+
+# Update this once you know your GitHub Pages URL, e.g. https://yourusername.github.io
+url: ""
+baseurl: ""
+
+theme: minima
+minima:
+  skin: classic
+  social_links:
+    linkedin: landonbustos
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+permalink: /:year/:month/:day/:title/
+
+header_pages:
+  - about.md
+
+# Jekyll processing
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
