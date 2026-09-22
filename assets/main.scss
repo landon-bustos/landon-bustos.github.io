@@ -27,10 +27,40 @@ body {
 }
 
 .site-header .wrapper {
+  max-width: $content-width - ($spacing-unit * 2);
+  margin: 0 auto;
+  padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+// Simplify the nav to a plain row, no hamburger/absolute-positioned
+// dropdown, so it lines up flush right regardless of screen width.
+.site-nav {
+  .nav-trigger {
+    display: none;
+  }
+
+  label[for="nav-trigger"] {
+    display: none;
+  }
+
+  .trigger {
+    position: static;
+    display: flex;
+    gap: 24px;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+  }
+
+  .page-link {
+    line-height: inherit;
+  }
 }
 
 .page-content {
