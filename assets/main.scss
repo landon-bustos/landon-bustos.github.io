@@ -37,6 +37,13 @@ body {
   align-items: center !important;
   justify-content: space-between !important;
   flex-wrap: wrap !important;
+
+  // minima's %clearfix mixin adds a ::after to .wrapper; inside a flex
+  // container that pseudo-element becomes its own flex item and eats
+  // into the space-between gap, pulling the nav in from the right edge.
+  &::after {
+    display: none !important;
+  }
 }
 
 .site-header .site-title {
