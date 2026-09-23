@@ -27,39 +27,58 @@ body {
 }
 
 .site-header .wrapper {
-  max-width: $content-width - ($spacing-unit * 2);
-  margin: 0 auto;
-  padding-left: $spacing-unit;
-  padding-right: $spacing-unit;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  max-width: 740px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap !important;
+}
+
+.site-header .site-title {
+  float: none !important;
+  position: static !important;
 }
 
 // Simplify the nav to a plain row, no hamburger/absolute-positioned
 // dropdown, so it lines up flush right regardless of screen width.
-.site-nav {
+// !important throughout because minima's own nav CSS (float/absolute
+// positioning meant for the mobile dropdown) otherwise wins.
+.site-header .site-nav {
+  float: none !important;
+  position: static !important;
+  width: auto !important;
+  margin: 0 !important;
+
   .nav-trigger {
-    display: none;
+    display: none !important;
   }
 
   label[for="nav-trigger"] {
-    display: none;
+    display: none !important;
   }
 
   .trigger {
-    position: static;
-    display: flex;
-    gap: 24px;
-    background-color: transparent;
-    padding: 0;
-    border: none;
+    clear: none !important;
+    position: static !important;
+    float: none !important;
+    display: flex !important;
+    gap: 24px !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    width: auto !important;
   }
 
   .page-link {
-    line-height: inherit;
+    display: inline-block !important;
+    line-height: inherit !important;
+    margin-left: 0 !important;
   }
 }
 
